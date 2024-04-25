@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/_16sp"
+    android:layout_marginTop="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_8dp"
+
+    app:cardElevation="@dimen/_4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sp"
+            tool:text="User Id : 1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp">
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sp"
+                tool:text="User Id : 1"/>
+            <TextView
+                android:layout_toRightOf="@+id/userId"
+                android:id="@+id/postid"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sp"
+                tool:text="Post Id  : 1"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sp"
+            tool:text="User Id : 1"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
